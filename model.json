@@ -1,29 +1,44 @@
 {
-    "model_name": "AI_Essay_Detector",
-    "description": "A fine-tuned model to detect if an essay is about Artificial Intelligence.",
-    "architecture": "BERT",
-    "hyperparameters": {
-      "num_layers": 12,
-      "hidden_size": 768,
-      "num_attention_heads": 12,
-      "vocab_size": 30522,
-      "max_length": 512,
-      "dropout_prob": 0.1,
-      "learning_rate": 2e-5,
-      "batch_size": 32,
-      "num_epochs": 3
+  "data": [
+    {
+      "text": "This essay discusses the impact of artificial intelligence on society.",
+      "label": "Human"
     },
-    "training_data": {
-      "source": "AI_Essay_Corpus",
-      "format": "text",
-      "size": "10,000 essays",
-      "preprocessing_steps": ["Tokenization", "Padding"]
+    {
+      "text": "Artificial intelligence has revolutionized various industries, including healthcare and finance.",
+      "label": "Human"
     },
-    "evaluation_metrics": {
-      "accuracy": 0.92,
-      "precision": 0.88,
-      "recall": 0.94,
-      "f1_score": 0.91
+    {
+      "text": "The advancement of AI technology has raised concerns about job displacement and privacy issues.",
+      "label": "Human"
+    },
+    {
+      "text": "Generative models like GPT-3 have demonstrated impressive capabilities in natural language generation.",
+      "label": "AI"
+    },
+    {
+      "text": "Machine learning algorithms are being used to automate various tasks, improving efficiency and productivity.",
+      "label": "AI"
+    },
+    {
+      "text": "The future of AI holds both promise and challenges as we strive to harness its potential responsibly.",
+      "label": "Human"
+    },
+    {
+      "text": "AI systems are becoming increasingly sophisticated, capable of performing complex tasks with minimal human intervention.",
+      "label": "AI"
+    },
+    {
+      "text": "Ethical considerations are paramount in the development and deployment of AI systems to ensure fairness and accountability.",
+      "label": "Human"
+    },
+    {
+      "text": "Advancements in AI are leading to new opportunities in fields such as education and entertainment.",
+      "label": "AI"
+    },
+    {
+      "text": "As AI continues to evolve, it's essential to address issues related to bias and transparency to build trust in these technologies.",
+      "label": "Human"
     }
-  }
-  
+  ]
+}
